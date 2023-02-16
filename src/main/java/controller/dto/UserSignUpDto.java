@@ -17,10 +17,10 @@ public class UserSignUpDto {
 
     private String email;
     private String phoneNumber;
-    private String majorId;
+    private Long majorId;
 
     @Builder
-    public UserSignUpDto(String username, String loginId, String password, String passwordConfirm, String email, String phoneNumber, String majorId) {
+    public UserSignUpDto(String username, String loginId, String password, String passwordConfirm, String email, String phoneNumber, Long majorId) {
         this.username = username;
         this.loginId = loginId;
         this.password = password;

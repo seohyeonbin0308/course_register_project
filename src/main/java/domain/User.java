@@ -58,9 +58,9 @@ public class User extends BaseTimeEntity implements UserDetails{
         this.takeClasses = new ArrayList<>();
     }
 
-    public void update(UserUpdateRequestDto reuqestDto){
-        this.email = reuqestDto.getEmail();
-        this.phoneNumber = reuqestDto.getPhoneNumber();
+    public void update(UserUpdateRequestDto requestDto){
+        this.email = requestDto.getEmail();
+        this.phoneNumber = requestDto.getPhoneNumber();
     }
 
     // 수강신청
